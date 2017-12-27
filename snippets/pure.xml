@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Aosp-Pure -->
+
+  <project path="bionic" name="platform_bionic" remote="pure" />
+  <project path="build/make" name="platform_build" remote="pure" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" remote="pure" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  
+  <project path="frameworks/av" name="platform_frameworks_av" remote="pure" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="pure" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="pure" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="pure" />
+  <project path="system/core" name="platform_system_core" remote="pure" />
+  <project path="system/vold" name="platform_system_vold" remote="pure" />
+  <project path="system/media" name="platform_system_media" remote="old" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="pure" />  
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="LineageOs" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="LineageOs" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="LineageOs" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="LineageOs" >
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
+  </project>
+  
+</manifest>
