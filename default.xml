@@ -637,5 +637,6 @@
 
   <include name="snippets/cleanup.xml" />
   <include name="snippets/pure.xml" />
+  <include name="snippets/LineageOs.xml" />
 
 </manifest>
