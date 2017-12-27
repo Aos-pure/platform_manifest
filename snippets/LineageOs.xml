@@ -32,8 +32,6 @@
   <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8994" groups="qcom" remote="LineageOs" revision="lineage-15.0-caf-8994" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996" groups="qcom" remote="LineageOs" revision="lineage-15.0-caf-8996" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8998" groups="qcom" remote="LineageOs" revision="lineage-15.0-caf-8998" />
-  <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="LineageOs" />
-  <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="LineageOs" />
   <!-- END LINEAGE-OS -->
   
 </manifest>
