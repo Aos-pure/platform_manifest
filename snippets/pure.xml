@@ -3,7 +3,6 @@
 
   <!-- Aosp-Pure -->
 
-  <project path="bionic" name="platform_bionic" remote="pure" />
   <project path="build/make" name="platform_build" remote="pure" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -17,19 +16,29 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  
+  <project path="bootable/recovery" name="platform-bootable-recovery" remote="pure" />
+  <project path="external/selinux" name="platform_external_selinux" remote="pure" /> 
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="pure" />  
   <project path="frameworks/av" name="platform_frameworks_av" remote="pure" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="pure" />
+  <project path="frameworks/support" name="platform_frameworks_support" remote="pure" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="pure" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="pure" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="pure" />
+  <project path="hardware/ril-caf" name="platform_hardware_ril" remote="pure" revision="oreo-mr1-caf" 
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="pure" />
+  <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan" remote="pure" branch="oreo-mr1-caf"/>
   <project path="system/core" name="platform_system_core" remote="pure" />
   <project path="system/vold" name="platform_system_vold" remote="pure" />
   <project path="system/media" name="platform_system_media" remote="pure" />
+  <project path="system/qcom" name="platform_system_qcom" remote="pure" />
+  <project path="system/bt" name="platform_system_bt" remote="pure" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="pure" />
   <project path="vendor/aosp" name="vendor_aosp" remote="pure" />  
-  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="LineageOs" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="LineageOs" />
-  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="LineageOs" />
-  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="LineageOs" >
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="LineageOs" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="LineageOs" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="LineageOs" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="pure" >
     <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
   </project>
   

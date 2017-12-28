@@ -12,7 +12,6 @@
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8994" groups="qcom,qcom_audio" remote="LineageOs" revision="lineage-15.0-caf-8994" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" groups="qcom,qcom_audio" remote="LineageOs" revision="lineage-15.0-caf-8996" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8998" groups="qcom,qcom_audio" remote="LineageOs" revision="lineage-15.0-caf-8998" />
-  <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="LineageOs" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="LineageOs" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/apq8084" groups="pdk,qcom,qcom_display" remote="LineageOs" revision="lineage-15.0-caf-8084" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" groups="pdk,qcom,qcom_display" remote="LineageOs" revision="lineage-15.0-caf-8916" />

@@ -6,7 +6,6 @@
   <remove-project name="device/generic/armv7-a-neon" />
   <remove-project name="device/generic/car" />
   <remove-project name="device/generic/common" />
-  <remove-project name="device/generic/goldfish" />
   <remove-project name="device/generic/goldfish-opengl" />
   <remove-project name="device/generic/mini-emulator-arm64" />
   <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
@@ -83,6 +82,7 @@
   <remove-project name="platform/prebuilts/gdb/darwin-x86" />
   <remove-project name="platform/prebuilts/go/darwin-x86" />
   <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/media" />
   <remove-project name="platform/system/sepolicy" />
